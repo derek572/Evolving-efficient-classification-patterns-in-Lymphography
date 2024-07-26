@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lymph Disease Predictor</title>
+    <style>
+        body 
+        {
+            background-color: rgba(255, 228, 181, 0.932);
+        }
+
+        #main-heading {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 1%;
+            border-radius: 2rem;
+        }
+
+        input {
+            height: 3vh;
+            width: 80%; /* Adjusted width for better alignment */
+            margin-top: 2%; /* Adjusted margin for better spacing */
+        }
+
+        label {
+            padding-top: 2%;
+            padding-right: 3%;
+        }
+
+        .Outer {
+            width: 80%;
+            height: 150%;
+            background-color: white;
+            margin-top: 5%;
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2%;
+        }
+
+        form {
+            display: flex;
+            width: 100%;
+        }
+
+        .outer div {
+            margin-bottom: 20px; /* Adjusted margin for better spacing */
+        }
+
+        .button-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1%;
+            margin-left: 80%;
+        }
+
+         #btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: red;
+            color: white;
+            border-radius: 10%;
+            width:auto;
+            height:auto;
+        } 
+
+        #i1 {
+            padding: 3%;
+            background-color: white;
+            width: 60%; /* Adjusted width for better alignment */
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 3%;
+            margin-left: 20%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main-heading">
+        <h2>Lymphography Prediction</h2>
+    </div>
+
+    <form action="/predict" method="post" id="i1">
+        <!-- Left side -->
+        <div class="outer">
+            <div>
+                <label for="">Enter the Lymphatics  :</label>
+                <input type="text" name="a">
+            </div>
+            <!-- ... (remaining left side input fields) ... -->
+            <div>
+                <label for="">Enter the block of affere  :</label>
+                <input type="text" name="b">
+            </div>
+            <div>
+                <label for="">Enter the bl. of lymph. c  :</label>
+                <input type="text" name="c">
+            </div>
+            <div>
+                <label for="">Enter the bl. of lymph. s  :</label>
+                <input type="text" name="d">
+            </div>
+            <div>
+                <label for="">Enter the bypass  :</label>
+                <input type="text" name="e">
+            </div>
+            <div>
+                <label for="">Enter the extravasates  :</label>
+                <input type="text" name="f">
+            </div>
+            <div>
+                <label for="">Enter regeneration of  :</label>
+                <input type="text" name="g">
+            </div>
+            <div>
+                <label for="">Enter the early uptake in  :</label>
+                <input type="text" name="h">
+            </div>
+            <div>
+                <label for="">Enter the lym.nodes dimin  :</label>
+                <input type="text" name="i">
+            </div>
+
+        </div>
+
+        <!-- Right side -->
+        <div class="outer">
+            <div>
+                <label for="">Enter lym.nodes enlar :</label>
+                <input type="text" name="j">
+            </div>
+            <!-- ... (remaining right side input fields) ... -->
+            <div>
+                <label for="">Enter changes in lym :</label>
+                <input type="text" name="k">
+            </div>
+            <div>
+                <label for="">Enter defect in node :</label>
+                <input type="text" name="l">
+            </div>
+
+            <div>
+                <label for="">Enter changes in node :</label>
+                <input type="text" name="m">
+            </div>
+
+            <div>
+                <label for="">Enter changes in stru :</label>
+                <input type="text" name="n">
+            </div>
+
+            <div>
+                <label for="">Enter special forms :</label>
+                <input type="text" name="o">
+            </div>
+
+            <div>
+                <label for="">Enter dislocation of :</label>
+                <input type="text" name="p">
+            </div>
+
+            <div>
+                <label for="">Enter exclusion of no :</label>
+                <input type="text" name="q">
+            </div>
+
+            <div>
+                <label for="">Enter no. of nodes in :</label>
+                <input type="text" name="r">
+            </div>
+
+
+        </div>
+
+        <!-- Button div -->
+        <div class="button-div">
+            <input type="submit" value="submit" id="btn">
+        </div>
+    </form>
+</body>
+</html>
+
